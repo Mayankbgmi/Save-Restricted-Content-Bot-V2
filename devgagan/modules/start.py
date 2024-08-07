@@ -9,7 +9,7 @@ from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardBu
 
 buttons = InlineKeyboardMarkup(
     [
-        [InlineKeyboardButton("Join Channel", url="https://t.me/WarriorUnitsBots")]
+        [InlineKeyboardButton("Join Channel", url="https://t.me/WarriorUnitsBots")],
         [InlineKeyboardButton("Anime Channel", url="https://t.me/Warrior_Units")],
         [InlineKeyboardButton("Buy Premium", url="https://t.me/oo7Jatji")]
     ]
