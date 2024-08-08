@@ -45,7 +45,7 @@ async def stats(event):
             f'Memory Total: {mem_t}\n'\
             f'Memory Free: {mem_a}\n'\
             f'Memory Used: {mem_u}\n\n'\
-            f'**__Powered by Team SPY__**\n'
+            f'**__Mᴀᴅᴇ Wɪᴛʜ 🤑 [𝐖𝐚𝐫𝐫𝐢𝐨𝐫 𝐔𝐧𝐢𝐭𝐬](https://t.me/WarriorUnitsBots)__**\n'
     
     await event.reply(f"{stats}")
 
