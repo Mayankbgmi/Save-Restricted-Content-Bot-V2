@@ -161,7 +161,7 @@ async def term_command(event):
         buttons=buttons
     )
 
-BUY_URL = "https://t.me/oo7jatji"
+REPO_URL = "https://t.me/oo7jatji"
 
 HELP_TEXT = """Here are the available commands:
 
@@ -182,7 +182,7 @@ HELP_TEXT = """Here are the available commands:
 
 @gagan.on(events.NewMessage(pattern='/help'))
 async def help_command(event):
-    buttons = [[Button.url("𝐁𝐮𝐲 𝐁𝐨𝐭 𝐒𝐨𝐮𝐫𝐜𝐞", url=BUY_URL)]]
+    buttons = [[Button.url("𝐁𝐮𝐲 𝐁𝐨𝐭 𝐒𝐨𝐮𝐫𝐜𝐞", url=REPO_URL)]]
     await event.respond(HELP_TEXT, buttons=buttons, link_preview=False)
 
 
