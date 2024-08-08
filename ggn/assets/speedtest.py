@@ -73,7 +73,7 @@ async def speedtest(event):
 ├ <b>Country:</b> <code>{result['client']['country']}</code>
 ├ <b>ISP:</b> <code>{result['client']['isp']}</code>
 ├ <b>ISP Rating:</b> <code>{result['client']['isprating']}</code>
-╰ <b>Powered by Team SPY</b> 
+╰ <b>** Mᴀᴅᴇ Wɪᴛʜ 🤑 [𝐖𝐚𝐫𝐫𝐢𝐨𝐫 𝐔𝐧𝐢𝐭𝐬](https://t.me/WarriorUnitsBots) **</b> 
 '''
     try:
         await event.reply(string_speed,file=path,parse_mode='html')
