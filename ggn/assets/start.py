@@ -55,8 +55,8 @@ async def start(event):
     user_id = event.sender_id
     collection.update_one({"user_id": user_id}, {"$set": {"user_id": user_id}}, upsert=True)
     buttons = [
-        [Button.url("Join Channel", url="https://t.me/devggn")],
-        [Button.url("Contact Me", url="https://t.me/ggnhere")],
+        [Button.url("𝐉𝐨𝐢𝐧 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/WarriorUnitsBots")],
+        [Button.url("𝐁𝐮𝐲 𝐏𝐫𝐞𝐦𝐢𝐮𝐦", url="https://t.me/oo7jatji")],
     ]
     await gagan.send_file(
         event.chat_id,
@@ -108,13 +108,14 @@ async def get_registered_users_command(event):
     os.remove(filename)  # Remove the temporary file after sending
 
 S = "/start"
-START_PIC = "https://graph.org/file/1dfb96bd8f00a7c05f164.gif"
+START_PIC = "https://te.legra.ph/file/17347fe75d5a904678904.jpg"
 TEXT = "Hey! I am Advance Content Saver Bot, do login in bot by /login and start saving from public/private channels/groups via sending post link.\n\n👉🏻 Execute /batch for bulk process upto 1K files range."
 
 
 M = "/plan"
 PREMIUM_PIC = "plan.png"
 PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via **__Amazon Gift Card__** (terms and conditions apply).
+⛩️ 𝐁𝐞𝐟𝐨𝐫𝐞 𝐁𝐮𝐲 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 𝐓𝐨 𝐀𝐝𝐦𝐢𝐧 @oo7jatji
 📥 **Download Limit**: Users can download up to 100 files in a single batch command.
 🛑 **Batch**: You will get two modes /bulk and /batch.
    - Users are advised to wait for the process to automatically cancel before proceeding with any downloads or uploads.\n
@@ -125,7 +126,7 @@ PRE_TEXT = """💰 **Premium Price**: Starting from $2 or 200 INR accepted via *
 async def plan_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Send Gift Card Code", url="https://t.me/ttonehelpbot")]
+        [Button.url("Send Gift Card Code", url="https://t.me/oo7jatji")]
     ]
 
     # Sending photo with caption and buttons
@@ -148,8 +149,8 @@ TERM_TEXT = """📜 **Terms and Conditions** 📜\n
 async def term_command(event):
     # Creating inline keyboard with buttons
     buttons = [
-        [Button.url("Query?", url="https://t.me/ttonehelpbot"),
-         Button.url("Channel", url="https://telegram.dog/devggn")]
+        [Button.url("Query?", url="https://t.me/oo7jatji"),
+         Button.url("Channel", url="https://telegram.dog/WarriorUnitsBots")]
     ]
 
     # Sending photo with caption and buttons
@@ -160,7 +161,7 @@ async def term_command(event):
         buttons=buttons
     )
 
-REPO_URL = "https://github.com/devgaganin/Save-Restricted-Content-Bot-Repo"
+BUY_URL = "https://t.me/oo7jatji"
 
 HELP_TEXT = """Here are the available commands:
 
@@ -174,14 +175,14 @@ HELP_TEXT = """Here are the available commands:
 
 ➡️ /settings - to edit settings.
 
-[GitHub Repository](%s)
+[𝐁𝐮𝐲 GitHub Repository](%s)
 """ % REPO_URL
 
 # Purchase premium for more website supported repo and /adl repo.
 
 @gagan.on(events.NewMessage(pattern='/help'))
 async def help_command(event):
-    buttons = [[Button.url("REPO", url=REPO_URL)]]
+    buttons = [[Button.url("𝐁𝐮𝐲 𝐁𝐨𝐭 𝐒𝐨𝐮𝐫𝐜𝐞", url=BUY_URL)]]
     await event.respond(HELP_TEXT, buttons=buttons, link_preview=False)
 
 
@@ -247,7 +248,7 @@ async def youtube_dl_command(_, message):
 
             # Get video metadata
             metadata = video_metadata(original_file)
-            caption = f"{video_info['title']}\n\n__**Powered by [Advance Content Saver Bot](https://t.me/advance_content_saver_bot)**__"  # Set caption to the title of the video
+            caption = f"{video_info['title']}\n\n__**Mᴀᴅᴇ Wɪᴛʜ [𝐖𝐚𝐫𝐫𝐢𝐨𝐫 𝐔𝐧𝐢𝐭𝐬 𝐁𝐨𝐭𝐬](https://t.me/WarriorUnitsBots)**__"  # Set caption to the title of the video
             
             # Send the video file and thumbnail
             ggn = message.chat.id
